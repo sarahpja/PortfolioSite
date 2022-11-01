@@ -1,0 +1,489 @@
+/*Define Global CSS*/
+
+/*Body*/
+body {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    color: black;
+    line-height: 1.5;
+    margin: 0px;
+}
+
+
+/*Define Default Font Size*/
+h1 {
+    font-size: 40px;
+    color: #ffffff;
+}
+
+h2 {
+    font-size: 32px;
+    text-align: center;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+h4 {
+    font-size: 20px;
+}
+
+h5 {
+    font-size: 18px;
+}
+
+p {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+a {
+    font-size: 16px;
+    font-weight: 400;
+    color: black;
+    text-decoration: none;
+}
+
+li {
+    font-weight: 400;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/*Define Global Helper Styles*/
+.center {
+    text-align: center;
+}
+
+.margin_bottom_five {
+    margin-bottom: 5px;
+}
+
+.margin_bottom_zero {
+    margin-bottom: 0;
+}
+
+.margin_top_zero {
+    margin-top: 0;
+}
+
+.link {
+    text-decoration: underline;
+}
+
+.link:hover {
+    text-decoration: none;
+}
+
+.full-width {
+    width: calc(100vw - var(--scrollbar-width));
+}
+
+/*Navigation Styles*/
+nav {
+    display: flex;
+    background-color: #ffffff;
+    position: sticky;
+    top: 0;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+}
+
+.nav_logo {
+    margin: 7px 0 0 46px;
+    width: 52px;
+}
+
+.nav_logo img {
+    max-width: 100%;
+    height: auto;
+}
+
+.nav_link_container {
+    display: flex;
+    margin-right: 46px;
+}
+
+.nav_link {
+    padding: 20px 0 20px 40px;
+}
+
+/******************************Home Page******************************/
+
+/*Hero Styles*/
+.hero_img {
+    width: 100%;
+    background: url("https://github.com/sarahpja/My-First-Repo/blob/main/BWHeadshotHero2x.jpg?raw=true");
+    background-color: #414141;
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero_container_copy {
+    width: 54%;
+    padding: 3%;
+}
+
+.hero_container_copy h1 {
+    white-space: nowrap;
+}
+
+.hero_container_copy h2 {
+    color: #D7D7D7;
+    font-size: 32px;
+    font-weight: 500;
+    text-align: left;
+}
+
+button {
+    background-color: #B4D2E3;
+    border: none;
+    color: black;
+    padding: 15px 44px;
+    font-size: 18px;
+    border-radius: 8px;
+}
+
+
+/*Card Styles*/
+.card_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 46px;
+}
+
+.card_container a:hover {
+    text-decoration: none;
+}
+
+.card_img {
+    width: 100%;
+}
+
+.card_img img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.card_copy_right {
+    padding: 2.5vw 5vw 2.5vw 5vw;
+    text-align: left;
+}
+
+.card_copy_left {
+    padding: 2.5vw 5vw 2.5vw 5vw;
+    text-align: right;
+}
+
+.card_copy_mobile {
+    display: none;
+}
+
+/*Footer Styles*/
+footer {
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+    background-image: url(../PortfolioSite/Images/brush-stroke-banner.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    padding: 25px 10px 0 10px;
+}
+
+footer a {
+    color: #ffffff;
+}
+
+.copyright {
+    font-size: 10px;
+    margin-top: 30px;
+}
+
+footer img {
+    filter: invert(1);
+    width: 40px;
+    height: auto;
+    padding: 5px;
+}
+
+/*Media Query*/
+@media only screen and (max-width:1024px) {
+    nav {
+        margin-right: 0;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    .hero_img {
+        min-width: 100%;
+        background: url("http://github.com/sarahpja/My-First-Repo/blob/main/BWHeadshotHero.jpg?raw=true");
+        background-color: #D7D7D7;
+        height: 400px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .hero_container_copy {
+        min-width: 100%;
+        Padding: 200px 20px 20px 20px;
+        text-align: center;
+    }
+
+    .hero_container_copy h2 {
+        color: #d7d7d7;
+        font-size: 24px;
+    }
+
+    .card_container {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 46px;
+    }
+
+    .card_img {
+        width: 100%;
+    }
+
+    .card_img img {
+        max-width: 100%;
+    }
+
+    .card_copy_left {
+        display: none;
+    }
+
+    .card_copy_right {
+        display: none;
+    }
+
+    .card_copy_mobile {
+        display: block;
+        padding: 2vw;
+    }
+}
+
+
+@media only screen and (max-width: 798px) {
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    section h2 {
+        padding-left: 20px;
+        text-align: left;
+    }
+
+    .hero_container_copy {
+        min-width: 100%;
+        Padding: 200px 20px 20px 20px;
+        text-align: left;
+    }
+
+    .hero_container_copy h2 {
+        font-size: 18px;
+        font-weight: 500;
+        padding-left: 0;
+    }
+
+    .hero_container_copy button {
+        display: block;
+    }
+
+    .nav_logo {
+        margin: 7px 0 0 20px;
+        width: 40px;
+    }
+
+    .nav_link_container {
+        margin-right: 20px;
+    }
+
+    .card {
+        padding: 20px;
+    }
+}
+
+/****************************Project Page************************/
+
+/*Project Overview Container*/
+.containerGrid {
+    display: grid;
+    padding: 20px 46px 20px 46px;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: auto;
+    grid-template-areas: "leftTop rightColumn" "leftTop rightColumn" "leftTop rightColumn" "leftBottom rightColumn";
+}
+
+/*Left Part of the Container*/
+.leftTop {
+    grid-area: leftTop;
+    margin-bottom: 20px;
+    background-color: #D7D7D7;
+}
+
+.leftTop_copy-title {
+    padding: 20px 30px 0 30px;
+}
+
+.leftTop_copy-title h1 {
+    color: black;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.leftCopy-body {
+    padding: 20px 60px 0 60px;
+}
+
+.leftCopy-body h3 {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 0;
+    line-height: 1;
+}
+
+.leftBottom {
+    grid-area: leftBottom;
+    background-color: #B4D2E3;
+}
+
+/*Right Part of the Column*/
+.rightColumn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: rightColumn;
+    margin-left: 20px;
+    background-color: #dfd0d0;
+    padding-inline: auto;
+
+}
+
+.scrollable img {
+    max-width: 250px;
+    height: auto;
+}
+
+.desktopArrow img {
+    max-width: 100%;
+    height: auto;
+}
+
+/*Scrollable Container*/
+.scrollable {
+    height: 500px;
+    min-width: 250px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    float: left;
+    position: relative;
+    border-radius: 20px;
+    z-index: 1;
+    margin-inline: 10px;
+}
+
+.scrollable::-webkit-scrollbar {
+    width: 5px;
+    padding-left: -10px;
+    display: none;
+}
+
+.scrollable:hover::-webkit-scrollbar {
+    display: contents;
+}
+
+.scrollable::-webkit-scrollbar-thumb {
+    background-color: #acacac;
+    border-radius: 20px;
+}
+
+/*End Scrollable Container*/
+
+/*Arrow*/
+.mobileArrow {
+    display: none;
+}
+
+/*Drop Shadow*/
+.shadow {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.projectStep {
+    padding-block: 20px;
+}
+
+
+
+/*Media Query*/
+@media only screen and (max-width:1024px) {
+    .containerGrid {
+        grid-template-rows: auto;
+        grid-template-columns: 100%;
+        grid-template-areas: "rightColumn" "leftTop" "leftBottom";
+    }
+
+    .rightColumn {
+        margin-left: 0;
+        flex-direction: column;
+        padding-block: 20px;
+    }
+
+
+    .mobileArrow {
+        margin: 10px;
+        display: block;
+    }
+
+    .desktopArrow {
+        display: none;
+    }
+
+
+    .leftCopy-body {
+        padding: 20px 30px 0 30px;
+    }
+
+}
