@@ -254,6 +254,10 @@ footer img {
         text-align: center;
     }
 
+    .hero_container_copy a button {
+        display: none;
+    }
+
     .hero_container_copy h2 {
         color: #d7d7d7;
         font-size: 24px;
