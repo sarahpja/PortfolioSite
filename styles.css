@@ -94,6 +94,33 @@ nav {
     z-index: 10;
 }
 
+.nav_link a {
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: none;
+    display: inline;
+    position: relative;
+    color: #000000;
+}
+
+.nav_link a:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: #000000;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.nav_link a:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
 .nav_logo {
     margin: 7px 0 0 46px;
     width: 52px;
@@ -201,7 +228,7 @@ footer {
     display: flex;
     flex-direction: column;
     background-color: transparent;
-    background-image: url(../PortfolioSite/Images/brush-stroke-banner.png);
+    background-image: url(Images/brush-stroke-banner.png);
     background-repeat: no-repeat;
     background-position: center;
     text-align: center;
