@@ -94,7 +94,7 @@ nav {
     z-index: 10;
 }
 
-.nav_link a {
+.nav-item a {
     font-size: 16px;
     font-weight: 400;
     text-decoration: none;
@@ -103,7 +103,7 @@ nav {
     color: #000000;
 }
 
-.nav_link a:after {
+.nav-item a:after {
     content: '';
     position: absolute;
     width: 100%;
@@ -116,7 +116,7 @@ nav {
     transition: transform 0.25s ease-out;
 }
 
-.nav_link a:hover:after {
+.nav-item a:hover:after {
     transform: scaleX(1);
     transform-origin: bottom left;
 }
@@ -136,9 +136,7 @@ nav {
     margin-right: 46px;
 }
 
-.nav_link {
-    padding: 20px 0 20px 40px;
-}
+
 
 /******************************Home Page******************************/
 
@@ -394,14 +392,14 @@ footer img {
 }
 
 .leftTop_copy-title {
-    padding: 20px 30px 0 30px;
+    padding: 10px 30px 10px 30px;
 }
 
 .leftTop_copy-title h1 {
     color: black;
-    text-align: center;
-    font-size: 20px;
+    font-size: 24px;
     font-weight: 600;
+    margin: 0;
 }
 
 .leftCopy-body {
@@ -418,6 +416,10 @@ footer img {
 .leftBottom {
     grid-area: leftBottom;
     background-color: #B4D2E3;
+}
+
+.overview h3 {
+    font-size: 20px;
 }
 
 /*Right Part of the Column*/
@@ -445,7 +447,7 @@ footer img {
 /*Scrollable Container*/
 .scrollable {
     height: 500px;
-    min-width: 250px;
+    width: auto;
     overflow-y: scroll;
     overflow-x: hidden;
     float: left;
@@ -517,4 +519,7 @@ footer img {
         padding: 20px 30px 0 30px;
     }
 
+    .leftTop_copy-title {
+        text-align: center;
+    }
 }
