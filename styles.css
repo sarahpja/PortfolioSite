@@ -51,23 +51,12 @@ li {
 
 a:hover {
     text-decoration: underline;
+    color: #000000;
 }
 
 /*Define Global Helper Styles*/
 .center {
     text-align: center;
-}
-
-.margin_bottom_five {
-    margin-bottom: 5px;
-}
-
-.margin_bottom_zero {
-    margin-bottom: 0;
-}
-
-.margin_top_zero {
-    margin-top: 0;
 }
 
 .link {
@@ -162,16 +151,17 @@ nav {
 
 .hero_container_copy h2 {
     color: #D7D7D7;
-    font-size: 32px;
+    font-size: 30px;
     font-weight: 500;
     text-align: left;
+    line-height: 1.5;
 }
 
 button {
     background-color: #B4D2E3;
     border: none;
     color: black;
-    padding: 15px 44px;
+    padding: 12px 30px;
     font-size: 18px;
     border-radius: 8px;
 }
