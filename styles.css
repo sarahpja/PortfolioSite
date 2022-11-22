@@ -106,6 +106,10 @@ nav {
     transition: transform 0.25s ease-out;
 }
 
+.nav-item a:hover {
+    color: #414141;
+}
+
 .nav-item a:hover:after {
     transform: scaleX(1);
     transform-origin: bottom left;
@@ -214,8 +218,6 @@ button {
 /*Footer Styles*/
 footer {
     color: #ffffff;
-    display: flex;
-    flex-direction: column;
     background-color: transparent;
     background-image: url(Images/brush-stroke-banner.png);
     background-repeat: no-repeat;
@@ -226,6 +228,10 @@ footer {
 
 footer a {
     color: #ffffff;
+}
+
+footer a:hover {
+    color: #B4D2E3;
 }
 
 .copyright {
