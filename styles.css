@@ -379,7 +379,8 @@ footer img {
 }
 
 .overview h1 {
-    color: #414141;
+    color: black;
+    text-align: center;
     font-size: 32px;
 }
 
