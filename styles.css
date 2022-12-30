@@ -262,7 +262,7 @@ footer img {
 
     .hero_img {
         min-width: 100%;
-        background: url("http://github.com/sarahpja/My-First-Repo/blob/main/BWHeadshotHero.jpg?raw=true");
+        background: url("Images/BWHeadshotHero.jpg");
         background-color: #D7D7D7;
         height: 400px;
         background-position: center;
